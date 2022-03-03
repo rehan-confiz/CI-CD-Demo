@@ -81,7 +81,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
 
   package:
-    needs: [ unit-test ]
+    needs: [ static-code-analysis ]
     name: Generate APK
     runs-on: ubuntu-latest
     steps:
