@@ -3,6 +3,20 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+sonarqube {
+    properties {
+        property "sonar.projectName", "CI/CD Demo"
+        property "sonar.projectKey", "rehan-confiz"
+        property "sonar.host.url", "https://sonarcloud.io/"
+        property "sonar.language", "kotlin"
+        property "sonar.sources", "src/main/java"
+        property "sonar.java.sources", "src/main/java"
+        property "sonar.sourceEncoding", "UTF-8"
+//        property "sonar.login", "admin"
+//        property "sonar.password", "PASSWORD"
+    }
+}
+
 android {
     compileSdk 32
 
@@ -30,7 +44,7 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
     buildFeatures {
         compose true
