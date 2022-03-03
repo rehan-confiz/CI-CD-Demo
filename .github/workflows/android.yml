@@ -16,14 +16,14 @@ jobs:
       - name: Run Lint
         uses: echo Run Lint
 
-#      - name: Run Debug Lint
-#        run: ./gradlew lintDebug
-#
-#      - name: Upload html test report
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: lint.html
-#          path: app/build/reports/lint-results-debug.html
+  #      - name: Run Debug Lint
+  #        run: ./gradlew lintDebug
+  #
+  #      - name: Upload html test report
+  #        uses: actions/upload-artifact@v2
+  #        with:
+  #          name: lint.html
+  #          path: app/build/reports/lint-results-debug.html
 
   unit-test:
     needs: [ lint ]
@@ -35,14 +35,14 @@ jobs:
       - name: Run unit Test
         uses: echo Run Unit Test
 
-#      - name: Run tests
-#        run: ./gradlew test
-#
-#      - name: Upload test report
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: unit_test_report
-#          path: app/build/reports/tests/testDebugUnitTest/
+  #      - name: Run tests
+  #        run: ./gradlew test
+  #
+  #      - name: Upload test report
+  #        uses: actions/upload-artifact@v2
+  #        with:
+  #          name: unit_test_report
+  #          path: app/build/reports/tests/testDebugUnitTest/
 
   instrumentation-test:
     needs: [ unit-test ]
