@@ -64,7 +64,7 @@ jobs:
   #          path: app/build/reports/androidTests/connected/
 
   static-code-analysis:
-    needs: [ unit-test ]
+    #    needs: [ unit-test ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
