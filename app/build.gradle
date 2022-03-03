@@ -1,8 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'org.sonarqube'
 }
+
+apply plugin: "org.sonarqube"
+
 
 sonarqube {
     properties {
