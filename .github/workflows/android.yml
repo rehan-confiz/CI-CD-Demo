@@ -99,5 +99,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: CI/CD Demo.apk
+          name:  Debug-Demo.apk
           path: app/build/outputs/apk/debug/app-debug.apk
