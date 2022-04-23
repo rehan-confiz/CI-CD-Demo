@@ -7,22 +7,6 @@ plugins {
 
 apply plugin: "org.sonarqube"
 
-
-//sonarqube {
-//    properties {
-//        property "sonar.projectName", "CI/CD Demo"
-//        property "sonar.projectKey", "rehan-confiz"
-//        property "sonar.host.url", "https://sonarcloud.io/"
-//        property "sonar.language", "kotlin"
-//        property "sonar.sources", "src/main/java"
-//        property "sonar.java.sources", "src/main/java"
-//        property "sonar.sourceEncoding", "UTF-8"
-//        property "sonar.organization", "rehan"
-////        property "sonar.login", "admin"
-////        property "sonar.password", "PASSWORD"
-//    }
-//}
-
 android {
     compileSdk 32
 
@@ -76,9 +60,6 @@ android {
 
 
 dependencies {
-//    project.tasks["sonarqube"]
-
-
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
